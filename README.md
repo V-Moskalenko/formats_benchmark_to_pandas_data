@@ -18,6 +18,9 @@
   format_list = ['csv', 'json', 'pickle', 'feather', 'parquet', 'hdf']
   df_result = benchmark(format_list, 1_000_000, 15, 15, 5, False)
 ```
+
+![image](https://user-images.githubusercontent.com/82712666/194953404-519f2f82-9d2b-49f1-9af9-78cd541dda9e.png)
+
 ### Результаты бенчмарка, в котором тип данных "object" не преобразовывался к типу "category" 
 ![Image alt](https://github.com/V-Moskalenko/formats_benchmark_to_pandas_data/blob/master/test_formats/Время%2C%20тип%20данных%20строки.png)
 ![Image alt](https://github.com/V-Moskalenko/formats_benchmark_to_pandas_data/blob/master/test_formats/Размер%2C%20тип%20данных%20строки.png)
@@ -27,6 +30,9 @@
 ```python
   df_result_2 = benchmark(format_list, 1_000_000, 15, 15, 5, True)
 ```
+
+![image](https://user-images.githubusercontent.com/82712666/194953671-0ab6a265-a3a6-408a-a19b-4d32ba4efc26.png)
+
 ![Image alt](https://github.com/V-Moskalenko/formats_benchmark_to_pandas_data/blob/master/test_formats/Время%2C%20тип%20данных%20категории.png)
 ![Image alt](https://github.com/V-Moskalenko/formats_benchmark_to_pandas_data/blob/master/test_formats/Размер%2C%20тип%20данных%20категории.png)
 ![Image alt](https://github.com/V-Moskalenko/formats_benchmark_to_pandas_data/blob/master/test_formats/RAM%2C%20тип%20данных%20категории.png)
